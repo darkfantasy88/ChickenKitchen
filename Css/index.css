@@ -2,7 +2,7 @@
 
 .header-container{
     background-color: var(--white-gray);
-    height: 20vh;
+    height: 20%;
     padding: 10px;
     display: flex;
     flex-flow: row;
