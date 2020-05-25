@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Css/order.css">
+    <script src="/js/jquery-3.4.1.js"></script>
+    <script src="/Js/calulation.js"></script>
+</head>
+<body>
+    <div class="header-container">
+        <!--Header AKA the nav-bar (the rectangle with the logo)-->
+            <div class="header-img">
+                <!--Image Set In Css-->
+            </div>
+    
+            <!--Navbar iteself (yes the option thingy )-->
+            <div class="header-nav">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="/Html/order.html">Order Page</a></li>
+                </ul>
+            </div>
+        </div>
+      
+        <div class="main-container">
+        <div class="container-img">
+            <h1>Menu</h1>
+        </div>
+        <div class="menu-section">
+
+            <table>
+                <tr><th>Beverages</th></tr>
+                <tr>
+                    <td>
+                    <section class="beverages">
+                        <div>
+                            <img src="/Images/fruits_.jpg" />
+                            <p>Jamaican Fruit Blend</p>
+                            <button onclick="AddItem('Jamaican Fruit Blend',150)">Order</button>
+                        </div>
+                        <div>
+                            <img src="/Images/coffee_.jpg" />
+                            <p>Jamaican Black Coffee</p>
+                            <button onclick="AddItem('Jamaican Black Coffee',100)">Order</button>
+                        </div>
+                        <div>
+                            <img src="/Images/soda_.jpg" />
+                            <p>Soft Drink</p>
+                            <button onclick="AddItem('Soft Drink',80)">Order</button>
+                        </div>
+                    </section>
+                    </td>
+                    
+                </tr>
+                <tr><th>Food Items</th></tr>
+                <tr>
+                    <td>
+                    <section class="beverages">
+                        <div>
+                            <img src="/Images/jerked_chicken.jpg" />
+                            <p>Jamaican Jerked Chicken</p>
+                            <button onclick="AddItem('Jamaican Jerked Chicken',750)">Order</button>
+                        </div>
+                        <div>
+                            <img src="/Images/roast_fish.jpg" />
+                            <p>Jamaican Roast Fish</p>
+                            <button onclick="AddItem('Jamaican Roast Fish',1000)">Order</button>
+                        </div>
+                        <div>
+                            <img src="/Images/baked_chicken.jpg" />
+                            <p>Oven Baked Chicken</p>
+                            <button onclick="AddItem('Oven Baked Chicken',520)">Order</button>
+                        </div>
+                    </section>
+                    </td>
+                    
+                </tr>
+               
+            </table>
+        </div>
+        <div class="order-section">
+            <div class="orders-header">
+                <h1>Orders</h1>
+<button onclick="CheckOut()">Checkout</button>
+<button onclick="ClearItems()">Clear</button>
+            </div>
+            <p class="price"></p>
+            <div>
+                <ul id="items">
+                </ul>
+
+                
+            </div>
+        </div>
+        </div>
+
+        <div class="dialog-box">
+            <div>
+                <p>Thanks For Ordering</p>
+                <p id="price1"></p>
+                <button onclick="CloseWindow()">Close</button>
+            </div>
+        </div>
+
+</body>
+</html>

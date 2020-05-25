@@ -1,0 +1,20 @@
+:root{
+    --dark-brown:#200000;
+    --white-gray:#fbfefe;
+    --dark-orange:#fa9409;
+    --light-orange:#fcbd01;
+    --dark-red:#ca060d;
+    --light-red:#fa1637;
+    --orange-gray:#e9c886;
+    --main-font-family:"Anton";
+    --food-font-family:"Edo";
+    --food-sub-font-family:"Edo";
+
+
+    --sub-font-family:"Open Sans";
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}

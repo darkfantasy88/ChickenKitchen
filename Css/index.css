@@ -1,0 +1,98 @@
+@import "_global.css";
+
+.header-container{
+    background-color: var(--white-gray);
+    height: 20vh;
+    padding: 10px;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    z-index: 1;
+    
+}
+.header-img{
+    background-image: url('/Images/Chicken-Kitchen-Logo.png');
+    background-size:35vh  ;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 10vw;
+    /* border: var(--dark-red) solid 2px; */
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+
+.header-nav{
+    /* border: var(--dark-red) solid 2px; */
+    height: 100px;
+    width: 400px;
+    margin-left: 40vw;
+    margin-top: 2.5vh;
+
+}
+
+.header-nav ul {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    line-height: 50px;
+}
+
+.header-nav ul li{
+    list-style: none;
+    padding: 25px;
+}
+
+.header-nav ul li a{
+    text-decoration: none;
+    font-family: var(--sub-font-family);
+    color: var(--dark-red);
+    font-size: 14px;
+}
+
+
+.header-nav ul li a:hover{
+    color: var(--dark-orange);
+
+}
+
+.advert{
+    z-index: 0;
+    width: 100vw;
+    height: 70vh;
+}
+
+body{
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+
+
+@media screen and (max-width:1000px) {
+
+    .header-container{
+        display: flex;
+        flex-flow: column;
+        flex-wrap: wrap;
+        height: 50vh;
+    }
+    .header-img{
+        background-size:35vh  ;
+        width: 100vw;
+        margin-left: 0;
+    }
+    .header-nav{
+
+        width: 100vw;
+        margin-left: 0;
+  
+    }
+    .header-nav ul{
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+}

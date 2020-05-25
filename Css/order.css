@@ -1,0 +1,195 @@
+@import "index.css";
+
+body{
+    background-color: var(--dark-red);
+}
+
+.main-container{
+    width: 100vw;
+    height: 75%;
+    display: block;
+}
+.menu-section{
+    float: left;
+    width: 50vw;
+    height: 77vh;
+    color: var(--dark-orange);
+    background-color: var(--dark-red);
+
+    font-family: var(--food-font-family);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.order-section{
+    float: left;
+    width: 50vw;
+    height: 77vh;
+
+    background-color: var(--dark-orange);
+}
+.container-img{
+    background-image: url('/Images/complimantary_background_1.svg');
+    background-position: center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-color: var(--white-gray);
+    text-align: center;
+    font-family: var(--food-font-family);
+    font-size: 20px;
+    color: var(--dark-orange);
+    padding: 25px 0px;
+    width: 100vw;
+    height: 45vh;
+    display: none;
+
+}
+
+/*Menu Section*/
+
+
+
+.menu-section table tr th{
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 0px;
+}
+.beverages div{
+    text-align: center;
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.beverages div img{
+    width: 100%;
+}
+.beverages div p{
+    width: 100%;
+    padding: 20px 0px;
+}
+.beverages div button{
+    width: 70%;
+    background-color: var(--light-orange);
+    font-family: var(--food-font-family);
+    color: var(--dark-red);
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+
+
+
+
+
+
+
+/* Orders Section */
+.order-section h1{
+    text-align: center;
+    padding: 25px;
+    color: var(--dark-red);
+    font-family: var(--food-font-family);
+    font-size:55px;
+
+}
+.orders-header{
+    width: 100%;
+
+}
+.orders-header button{
+    margin-left: 20px;
+    background-color: var(--light-orange);
+    font-family: var(--food-font-family);
+    color: var(--dark-red);
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    width: 100px;
+}
+#items{
+    text-align: center;
+    color: var(--dark-red);
+    font-family: var(--food-font-family);
+    padding: 5px;
+}
+#items li{
+    float: left;
+    cursor: pointer;
+    font-family: "Ink Free";
+    padding: 10px 10px;
+    list-style: none;
+    font-weight: bolder;
+}
+
+.price{
+    text-align: center;
+    padding: 20px;
+    color: var(--dark-red);
+    font-family: "Ink Free";
+    font-size: 20px;
+}
+.dialog-box{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+.dialog-box div{
+    text-align: center;
+ width: 200px;
+ /* height: 100px; */
+ background-color: var(--white-gray);
+ border-radius: 5px;
+ margin: 25% 0 0 42.5%;
+ padding: 10px;
+ font-family: var(--food-font-family);
+}
+
+.dialog-box div p{
+    padding: 10px;
+    color: var(--dark-red);
+}
+#price1{
+    font-family: "Ink Free";
+    color: var(--dark-orange);
+
+}
+.dialog-box div button{
+    /* margin-left: 20px; */
+    background-color: var(--light-orange);
+    font-family: var(--food-font-family);
+    color: var(--dark-red);
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    width: 100px;
+}
+@media screen and (max-width:1000px) {
+
+    .container-img{
+        display: block;
+
+    }
+    .menu-section{
+        float: left;
+        width: 100vw;
+        height: max-content;
+
+    }
+    .order-section{
+        float: left;
+        width: 100vw;
+    }
+
+    .dialog-box{
+        position: absolute;
+        z-index: 1;
+        height: 262vmax;
+    }
+    .dialog-box div{
+        position: fixed;
+        margin: 50% 0 0 25%;
+    }
+}
