@@ -41,7 +41,9 @@ function CloseWindow(){
 }
 
 function CheckOut(){
-   $('window').scrollTop(0);
+   $(window).scrollTop(0);
+   $('.dialog-box').scrollTop(0);
+
     if(totalPrice<1){
         $('.dialog-box div p:nth-child(1)').text("No Items Selected");
         $('.dialog-box').css('display','block');
