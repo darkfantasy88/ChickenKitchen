@@ -8,6 +8,12 @@
     src:url('/Fonts/edo.ttf');
 }
 
+@font-face{
+    font-family: "Anton";
+    src:url('/Fonts/Anton-Regular.ttf');
+}
+
+
 
 :root{
     --dark-brown:#200000;
