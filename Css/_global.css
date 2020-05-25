@@ -1,3 +1,14 @@
+@font-face{
+    font-family: "Ink Free";
+    src:url('/Fonts/Inkfree.ttf');
+}
+
+@font-face{
+    font-family: "Edo";
+    src:url('/Fonts/edo.ttf');
+}
+
+
 :root{
     --dark-brown:#200000;
     --white-gray:#fbfefe;
